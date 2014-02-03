@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "traffic_util"
   gem.homepage = "http://github.com/sugahara/traffic_util"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Traffic Analyse Utility in Ruby}
+  gem.description = %Q{Entropy calculator, Anderson-Darling-test}
   gem.email = "j.sghr.jp@gmail.com"
   gem.authors = ["Jun Sugahara"]
   # dependencies defined in Gemfile
