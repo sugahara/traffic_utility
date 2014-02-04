@@ -4,11 +4,9 @@ Network Traffic Analysing Utility in Ruby
 
 == Utility
 ===Anderson-Darling-test
-* Entropy Calculator
-  Caclulate entropy of traffic parameter.
+[Entropy Calculator] Caclulate entropy of traffic parameter.
 
-* Anderson-Darling-test
-  See <http://en.wikipedia.org/wiki/Anderson-Darling_test>
+[Anderson-Darling-test] See {http://en.wikipedia.org/wiki/Anderson-Darling_test}[http://en.wikipedia.org/wiki/Anderson-Darling_test]
 
 == Contributing to traffic_util
  
