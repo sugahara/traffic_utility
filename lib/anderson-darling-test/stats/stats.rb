@@ -1,5 +1,5 @@
 module Stats
-
+  require 'gsl'
   def avg(values)
     return values.inject(:+)/values.size.to_f
   end
