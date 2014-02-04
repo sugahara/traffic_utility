@@ -1,6 +1,13 @@
 = traffic_util
 
-Description goes here.
+Network Traffic Analysing Utility in Ruby
+
+== Utility
+===Anderson-Darling-test
+*Entropy Calculator
+Caclulate entropy of traffic parameter.
+
+*Anderson-Darling-test(<http://en.wikipedia.org/wiki/Anderson-Darling_test>)
 
 == Contributing to traffic_util
  
