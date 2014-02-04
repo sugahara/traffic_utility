@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jun Sugahara"]
-  s.date = "2014-02-03"
+  s.date = "2014-02-04"
   s.description = "Entropy calculator, Anderson-Darling-test"
   s.email = "j.sghr.jp@gmail.com"
   s.extra_rdoc_files = [
@@ -25,17 +25,21 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "example/anderson-darling-test.rb",
+    "example/data/gauss.txt",
+    "example/tools/gauss.rb",
     "lib/anderson-darling-test/.DS_Store",
     "lib/anderson-darling-test/anderson-darling-test.rb",
     "lib/anderson-darling-test/standard-normal-distribution.rb",
     "lib/anderson-darling-test/stats/.DS_Store",
     "lib/anderson-darling-test/stats/stats.rb",
     "lib/entropy/entropy_calculator.rb",
-    "lib/traffic_util.rb",
+    "lib/traffic_utility.rb",
     "spec/spec_helper.rb",
-    "spec/traffic_util_spec.rb"
+    "spec/traffic_util_spec.rb",
+    "traffic_util.gemspec"
   ]
-  s.homepage = "http://github.com/sugahara/traffic_util"
+  s.homepage = "http://github.com/sugahara/traffic_utility"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "2.1.11"

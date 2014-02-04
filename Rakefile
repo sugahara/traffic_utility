@@ -14,8 +14,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
-  gem.name = "traffic_util"
-  gem.homepage = "http://github.com/sugahara/traffic_util"
+  gem.name = "traffic_utility"
+  gem.homepage = "http://github.com/sugahara/traffic_utility"
   gem.license = "MIT"
   gem.summary = %Q{Traffic Analyse Utility in Ruby}
   gem.description = %Q{Entropy calculator, Anderson-Darling-test}
@@ -44,7 +44,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "traffic_util #{version}"
+  rdoc.title = "traffic_utility #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
