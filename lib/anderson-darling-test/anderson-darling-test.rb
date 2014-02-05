@@ -5,9 +5,9 @@ require 'anderson-darling-test/stats/stats'
 require 'anderson-darling-test/standard-normal-distribution'
 include Stats
 
-  def anderson_darling_test(samples)
+  def anderson_darling_test(samples, critical_value=nil)
     if samples.size < 5
-      puts "Samples size need to be more than five."
+      puts "Sample array size needs to be more than five."
       puts "See http://en.wikipedia.org/wiki/Anderson%E2%80%93Darling_test"
       exit
     end
@@ -19,16 +19,17 @@ include Stats
 
     value = value * (1.0 + 4/n - 25/(n*n))
 
-    critical_value = 1.092 # 1.0% Significance
+    #critical_value = 1.092 # 1.0% Significance
     #critical_value = 0.918 # 2.5% Significance
     #critical_value = 0.787 # 5.0% Significance
     #critical_value = 0.656 # 10.0% Significance
-    #critical_value = 0.576 # 15.0% Significance
+    critical_value ||= 0.576 # 15.0% Significance
 
 
-    return value <= critical_value
+    value <= critical_value
   end
 
+  private
   def calc_anderson_darling_value(samples)
     snd = StandardNormalDistribution.new()
     sum = 0.0
