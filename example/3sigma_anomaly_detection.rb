@@ -1,5 +1,4 @@
 require 'traffic_util'
-require 'anomaly-detection/detector/sigma'
 include AnomalyDetection
 
 timestamp_array=[]

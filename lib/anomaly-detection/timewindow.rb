@@ -22,4 +22,5 @@ module AnomalyDetection
     def pop
       @data_array.pop
     end
+  end
 end

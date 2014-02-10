@@ -14,5 +14,5 @@ module Detector
       end
       true
     end
-
+  end
 end
