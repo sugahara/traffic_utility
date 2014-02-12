@@ -49,3 +49,6 @@ pkg
 #*.rbc
 
 Gemfile.lock
+
+# working dir
+work/*
