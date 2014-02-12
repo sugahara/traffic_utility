@@ -1,4 +1,4 @@
-require 'traffic_util'
+require 'traffic_utility'
 
 include AndersonDarlingTest
 
