@@ -1,5 +1,6 @@
 require 'traffic_utility'
 include AnomalyDetection
+include Timeseries
 
 timestamp_array=[]
 
@@ -10,6 +11,9 @@ result_array = []
 data = File.open(ARGV[0],'r')
 
 data_lines = data.readlines.delete_if{|v| v.include?("#")}
+
+# Without timestamp
+# data_lines = data_lines.map{|line| Time.now.to_f.to_s+" "+line}
 
 data_lines.each do |line|
   if no_anomaly_timewindow.is_full? == false
