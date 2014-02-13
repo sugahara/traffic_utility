@@ -23,5 +23,10 @@ module Timeseries
     def pop
       @data_array.pop
     end
+
+    def to_a
+      @data_array
+    end
+
   end
 end
