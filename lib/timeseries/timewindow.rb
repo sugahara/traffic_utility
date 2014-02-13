@@ -1,4 +1,4 @@
-module AnomalyDetection
+module Timeseries
   class Timewindow
     attr_reader :data_array
 
